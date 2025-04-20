@@ -33,7 +33,7 @@ class SideMenu extends StatelessWidget {
         'route': '/examination'
       },
       {'label': 'Report Cards', 'icon': Icons.receipt, 'route': '/reportCards'},
-      {'label': 'Calendar', 'icon': Icons.calendar_month, 'route': '/calender'},
+      {'label': 'Calendar', 'icon': Icons.calendar_month, 'route': '/calendar'},
       {
         'label': 'Notice Board',
         'icon': Icons.campaign,

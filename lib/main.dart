@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:zesta_frontend/Pages/Calender.dart';
 import 'package:zesta_frontend/Pages/Dashboard.dart';
 import 'package:zesta_frontend/Pages/Home.dart';
 import 'package:zesta_frontend/Pages/Homework.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/resetPassword': (context) => ResetPassword(),
         '/dashboard': (context) => Dashboard(),
         '/homework': (context) => HomeworkScreen(),
+        '/calendar': (context) => EventCalendarScreen(),
       },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
