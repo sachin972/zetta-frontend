@@ -231,12 +231,7 @@ class _EmailSignupPageState extends State<EmailSignupPage> {
                   //   password: passwordController.text,
                   // );
                   // Navigator.pop(context);
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DashboardScreen(),
-                    ),
-                  );
+                  Navigator.pushReplacementNamed(context, "/dashboard");
                 } catch (e) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text("Error: ${e.toString()}")),

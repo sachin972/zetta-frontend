@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({super.key});
+import '../Components/SideMenu.dart';
 
+class Dashboard extends StatefulWidget {
+  // const Dashboard({super.key});
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     final notices = [
@@ -74,7 +81,15 @@ class DashboardScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 child: Row(
                   children: [
-                    const Icon(Icons.grid_view, color: Colors.white),
+                    IconButton(
+                        icon: const Icon(Icons.grid_3x3_outlined),
+                        onPressed: () => {
+                              showModalBottomSheet(
+                                  context: context,
+                                  isScrollControlled: true,
+                                  builder: (_) => const SideMenu())
+                            },
+                        color: Colors.white),
                     const SizedBox(width: 16),
                     Expanded(
                       child: Column(
@@ -210,7 +225,7 @@ class DashboardScreen extends StatelessWidget {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
 
               const SizedBox(height: 32),
             ],
