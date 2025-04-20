@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:zesta_frontend/Pages/Dashboard.dart';
 import 'package:zesta_frontend/Pages/Home.dart';
+import 'package:zesta_frontend/Pages/Homework.dart';
 import 'package:zesta_frontend/Pages/Login.dart';
 import 'package:zesta_frontend/Pages/SignUp.dart';
 
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
         'login': (context) => LoginPage(),
         '/signup': (context) => SignUp(),
         '/resetPassword': (context) => ResetPassword(),
+        '/dashboard': (context) => Dashboard(),
+        '/homework': (context) => HomeworkScreen(),
       },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -43,14 +47,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
