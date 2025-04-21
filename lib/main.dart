@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:zesta_frontend/Pages/Calender.dart';
 import 'package:zesta_frontend/Pages/Dashboard.dart';
+import 'package:zesta_frontend/Pages/Fee.dart';
 import 'package:zesta_frontend/Pages/Home.dart';
 import 'package:zesta_frontend/Pages/Homework.dart';
 import 'package:zesta_frontend/Pages/Login.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/dashboard': (context) => Dashboard(),
         '/homework': (context) => HomeworkScreen(),
         '/calendar': (context) => EventCalendarScreen(),
+        '/feeDetails': (context) => FeeDetailsPage(),
       },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
