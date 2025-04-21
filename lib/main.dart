@@ -9,6 +9,7 @@ import 'package:zesta_frontend/Pages/Homework.dart';
 import 'package:zesta_frontend/Pages/Login.dart';
 import 'package:zesta_frontend/Pages/SignUp.dart';
 
+import 'Pages/Multimedia.dart';
 import 'Pages/ResetPassword.dart';
 
 void main() {
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/homework': (context) => HomeworkScreen(),
         '/calendar': (context) => EventCalendarScreen(),
         '/feeDetails': (context) => FeeDetailsPage(),
+        '/multimedia': (context) => MultimediaPage(),
       },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
